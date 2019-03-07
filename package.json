@@ -30,6 +30,7 @@
     "yup": "^0.26.6"
   },
   "devDependencies": {
+    "@storybook/react-native": "^4.1.13",
     "jest-expo": "30.0.0"
   }
 }
