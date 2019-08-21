@@ -5,9 +5,6 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10.x]
     steps:
     - name: NPM install
       uses: actions/npm@master
@@ -18,5 +15,6 @@ jobs:
       env:
         EXPO_CLI_USERNAME: ${{ secrets.EXPO_CLI_USERNAME }}
         EXPO_CLI_PASSWORD: ${{ secrets.EXPO_CLI_PASSWORD }}
+        EXPO_DEBUG: true
       with:
         args: publish
