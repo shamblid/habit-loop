@@ -17,7 +17,7 @@ const AppNavContainer = createAppContainer(AppNavigator);
 
 // http://10.0.2.2:3000/graphql -> for android emulator (or something similar)
 // http://localhost:3000/graphql -> what works most of the time with the local server
-
+// asdf
 const client = new ApolloClient({
     uri: "https://1lhxpq5bs5.execute-api.us-east-1.amazonaws.com/dev/graphql",
     // uri: "http://localhost:3000/graphql",
