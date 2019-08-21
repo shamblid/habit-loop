@@ -12,5 +12,5 @@ action "Publish" {
   needs = "Install"
   uses = "expo/expo-github-action@3.0.0"
   args = "publish"
-  secrets = ["EXPO_CLI_USERNAME", "EXPO_CLI_PASSWORD"]
+  secrets = ["EXPO_CLI_USERNAME", "EXPO_CLI_PASSWORD", "HABIT_LOOP_SERVER_HOST"]
 }
